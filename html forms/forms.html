@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Forms Demo</title>
+    </head>
+
+    <body>
+        <h1>Регистрация</h1>
+
+        <form method="POST" action="">
+            <fieldset>
+                <legend>Потребителски данни</legend>
+                <label>
+                    Потребителско име
+                    <input type="text" name="username" autofocus required />
+                </label>
+                <div>
+                    <label>Парола</label>
+                    <input type="password" name="password" required pattern="[a-bA-B1-9]{3, 10}" />
+                </div>
+                <div>
+                    <label>Потвърждаване на парола</label>
+                    <input type="password" name="confirm-password" required />
+                </div>
+                <label for="email">Имейл</label>
+                <input id="email" type="email" name="email" />
+            </fieldset>
+
+            <fieldset>
+                <legend>Лични данни</legend>
+                <div>
+                    <label for="name">Имена</label>
+                    <input id="name" type="text" name="name" />
+                </div>
+
+                <div>
+                    <label>Пол</label>
+                    <label for="male">Мъж</label>
+                    <input id="male" type="radio" name="gender" value="M" />
+                    <label for="female">Жена</label>
+                    <input id="female" type="radio" name="gender" value="F" />
+                </div>
+
+                <div>
+                    <label>Години</label>
+                    <select name="age">
+                        <option value="18">18-25</option>
+                        <option value="26" selected>26-30</option>
+                        <option value="31">31-35</option>
+                        <option value="36">36-40</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Образование</legend>
+                <label for="high-school">Средно образование</label>
+                <input id="high-school" type="checkbox" name="high-school-degree" />
+                <label for="bachelor">Бакалавър</label>
+                <input id="bachelor" type="checkbox" name="bachelor-degree" />
+                <label for="master">Магистър</label>
+                <input id="master" type="checkbox" name="master-degree" />
+            </fieldset>
+            <!-- <button>Регистрирай</button> -->
+
+            <br/>
+            <input type="submit" value="Регистрирай" />
+        </form>
+    </body>
+</html>
