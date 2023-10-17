@@ -1,0 +1,66 @@
+section {
+    width: 500px;
+    border: 3px solid red;
+    padding: 15px;
+    margin: 25px;
+}
+
+#p1 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.copyright {
+    font-style: italic;
+    font-size: 22px;
+}
+
+article h2 {
+    color: green;
+}
+
+article > h2 {
+    font-weight: bold;
+}
+
+h2 ~ p {
+    color: white;
+    background-color: blueviolet;
+}
+
+h2 + p {
+    width: 250px;
+    border: 2px dotted black;
+}
+
+#article1 {
+    display: none;
+}
+
+#article2 {
+    left: 50px;
+    position: relative;
+}
+
+#article2 h2 + p {
+    position: absolute;
+    top: 50px;
+}
+
+header {
+    position: fixed;
+    background-color: green;
+}
+
+#article3 .float {
+    float: right;
+}
+
+#article3::after {
+    content: '';
+    clear: both;
+    display: block;
+}
