@@ -39,7 +39,7 @@ window.onload = function () {
 }());
 
 function deleteStudent(event) {
-    const rowToDelete = event.target.parentNode.parentNode;
+    const rowToDelete = event.tar-get.parentNode.parentNode;
     rowToDelete.parentNode.removeChild(rowToDelete);
 }
 
